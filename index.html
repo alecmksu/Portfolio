@@ -1,0 +1,125 @@
+<!-- Based tutorial from https://www.youtube.com/watch?v=FAOEAliMRIE&t=204s
+ Responsive Design Portfolio | HTML CSS & Javascript | Filter Options - NoMoreHowTo Code -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c782172233.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Alec Mendoza - Portfolio</title>
+</head>
+
+<body>
+    <!-- Sample of Socials Link -->
+    <!--  -->
+    <!-- Header -->
+    <header>
+        <nav class="container flexDisplay">
+            <h1 class="logo">DIGITAL<span> DESIGNER</span></h1>
+            <ul class="flexDisplay">
+                <li><a href="#showSect" class="menuItem navActive">Home</a></li>
+                <li><a href="#aboutSect" class="menuItem">About</a></li>
+                <li><a href="#workSect" class="menuItem">Work</a></li>
+                <li><a href="#contactSect" class="menuItem">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Opening screen -->
+    <section id="showSect" class="container flexDisplay">
+        <div class="left">
+            <h1>Alec <span>Mendoza</span></h1>
+            <!-- Introduction to me -->
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis temporibus atque quisquam enim! Iusto eius
+                velit amet ipsam qui dolorem quo sequi obcaecati error neque sed sunt, est laborum quidem?</p>
+        </div>
+        <div class="right">
+            <!-- Portrait -->
+            <img src="sample.jpg" alt="Portrait" width="480px">
+        </div>
+    </section>
+    <!-- About -->
+    <section id="aboutSect" class="container">
+        <h1 class="heading">About <span>Me</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate similique soluta sint odit, aut nulla nam!
+            Doloribus optio ducimus sequi facere aspernatur odit laudantium placeat a sed impedit, expedita saepe.</p>
+        <div class="info flexDisplay">
+            <!-- Email -->
+            <div class="box">
+                <div class="circle">
+                    <div></div>
+                </div>
+                <h1>Email Address</h1>
+                <p>mendozaalec7@gmail.com</p>
+            </div>
+            <!-- Phone -->
+            <div class="box">
+                <div class="circle">
+                    <div></div>
+                </div>
+                <h1>Phone Number</h1>
+                <p>620-338-3744</p>
+            </div>
+        </div>
+    </section>
+    <!-- Work -->
+    <section id="workSect">
+        <h1 class="heading">Digtial<span> Work</span></h1>
+        <div class="btns">
+            <button><a class="workBtn logo">Logo Designs</a></button>
+            <button><a class="workBtn art">Digital Art</a></button>
+        </div>
+        <div class="projects">
+            <div class="project logo"><img src="villa plaza NEW.png" alt="Villa Plaza Logo"></div>
+            <div class="project logo"><img src="Neni Logo.jpg" alt="Heimerman Stables Logo"></div>
+            <div class="project art"><img src="A Sunken Horizon.jpg" alt="A Sunken Horizon Digital Art"></div>
+            <div class="project art"><img src="liminal space.png" alt="Liminal Space Reading Playlist Digital Art">
+            </div>
+            <div class="project art"><img src="song.png" alt="Liminal Space Reading Playlist Songs Digital Art"></div>
+            <div class="project art"><img src="Sunset Parade extended.png" alt="Sunset Parade Digital Art"></div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contactSect" class="container">
+        <h1 class="heading">Contact <span>Me</span></h1>
+        <form class="flexDisplay">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Phone Number" required>
+            <textarea cols="30" rows="10" placeholder="Message"></textarea>
+            <div class="btns">
+                <button type="submit"><a>Submit</a></button>
+            </div>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="smallContainer">
+            <ul class="flexDisplay">
+                <li><a href="#showSect" class="menuItem navActive">Home</a></li>
+                <li><a href="#aboutSect" class="menuItem">About</a></li>
+                <li><a href="#workSect" class="menuItem">Work</a></li>
+                <li><a href="#contactSect" class="menuItem">Contact</a></li>
+            </ul>
+            <!-- Socials -->
+            <ul class="flexDisplay">
+                <li><a href="https://twitter.com/fontawesome">
+                        <i aria-hidden="true" class="fa-brands fa-instagram"></i>
+                        <span class="fa-sr-only">Instagram</span>
+                    </a>
+                </li>
+                <li><a href="https://twitter.com/fontawesome">
+                        <i aria-hidden="true" class="fa-brands fa-tiktok"></i>
+                        <span class="fa-sr-only">Tiktok</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container"><a>Terms of Service - Privacy Policy</a></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
