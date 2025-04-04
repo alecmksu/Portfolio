@@ -7,14 +7,14 @@
     box-sizing: border-box
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'EB Garamond', sans-serif;
-    color: #F2EFEB;
-    background: #0b0010;
+    font-family: 'EB Garamond', serif;
+    color: #010004;
+    background: #fffef9;
     overflow-x: auto;
 }
 
@@ -42,7 +42,7 @@ a {
     font-size: 1.2rem;
     font-weight: 300;
     text-decoration: none;
-    color: #F2EFEB;
+    color: #070009;
     cursor: pointer;
 }
 
@@ -55,7 +55,7 @@ textarea {
     cursor: pointer;
 }
 
-/* Header:classes */
+/* Header:classes & ids */
 .navActive {
     color: #C291F2;
 }
@@ -72,8 +72,66 @@ textarea {
     align-items: center;
     gap: 3rem;
 }
+#villa {
+    max-width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+}
 
-/* Showcase */
+/* Nav Close */
+.navClose {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    background: url(/menu.svg)no-repeat center;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+/* Villa Plaza content*/
+.villa-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+.sketch {
+    flex: 1;
+    min-width: 280px;
+}
+.sketch-villa {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.sketch img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 300px;
+}
+.text {
+    text-align: center;
+}
+.final-logo img{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+/* Showcase:index */
 #showSect {
     height: 100vh;
 }
@@ -93,7 +151,7 @@ textarea {
     font-weight: 300;
     margin: 2rem 0;
     width: 60%;
-    -webkit-text-stroke: .2px #0b0010;
+    -webkit-text-stroke: .2px #dda9f5;
 }
 
 #showSect .frame {
@@ -181,7 +239,7 @@ img {
     color: aliceblue;
 }
 
-/* About Me */
+/* About Me:index */
 #aboutSect {
     text-align: center;
     margin-bottom: 6rem;
@@ -195,7 +253,7 @@ section .heading {
 .box {
     width: 22%;
     height: 200px;
-    background: #0b0010;
+    background: #fffdff;
     margin: 3rem 0;
 }
 
@@ -228,7 +286,12 @@ section .heading {
     font-size: 1.5rem;
 }
 
-/* work */
+/* Form prevent spam:index  */
+.checkbox {
+    display: none;
+}
+
+/* Work:index */
 .projects {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -239,7 +302,7 @@ section .heading {
     width: 90%;
     padding: 2rem;
     margin: 1.5rem 1rem;
-    background: #1f012d;
+    background: rgb(237, 236, 232);
     border-radius: 10px;
     position: relative;
     cursor: pointer;
@@ -248,7 +311,7 @@ section .heading {
 
 .project img {
     width: 100%;
-    opacity: .6;
+    opacity: .9;
     border-radius: 10px;
     transition: scale 0.3s, opacity 0.3s;
 }
@@ -258,7 +321,7 @@ section .heading {
     scale: 1.1;
 }
 
-/* Contact me */
+/* Contact me:index */
 #contactSect {
     text-align: center;
 }
@@ -275,7 +338,7 @@ textarea {
     width: 46%;
     padding: 1rem 0.2rem;
     font-size: 1.2rem;
-    color: #F2EFEB;
+    color: #0e0e0e;
     border-bottom: 1px solid #F2EFEB;
 }
 
@@ -295,7 +358,7 @@ form button {
 
 /* Footer */
 footer {
-    background: #15011f;
+    background: #F2EFEB;
     padding-top: 3rem;
     padding-bottom: 1rem;
 }
@@ -317,18 +380,165 @@ footer ul:nth-child(2) {
 footer ul:nth-child(2) li {
     width: 40px;
     height: 40px;
-    background: #512888;
+    background: #F2EFEB;
     border-radius: 50px;
     padding: 10px;
     cursor: pointer;
 }
-footer ul:nth-child(2) li:hover{
-    background: #1f012d;
-    transition: 0.3 ease;
-}
-footer .container{
+
+footer .container {
     text-align: right;
 }
-footer .container a{
+
+footer .container a {
     font-size: 0.7rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+
+    header h1 span {
+        font-size: 3rem;
+    }
+
+    #showSect .left h1 span {
+        font-size: 4.6rem;
+    }
+
+    #showSect p {
+        width: 90%;
+    }
+
+    #showSect img {
+        width: 90%;
+    }
+
+    #workSect h1 span {
+        font-size: 4rem;
+    }
+
+    #contactSect h1 span {
+        font-size: 4rem;
+    }
+    /* Villa */
+}
+
+@media (max-width: 1024px) {
+    #showSect {
+        flex-direction: column-reverse;
+        margin: 6rem auto;
+    }
+
+    #showSect .frame {
+        margin-right: 0;
+    }
+
+    .btns {
+        margin-top: 4rem;
+    }
+
+    .info {
+        flex-wrap: wrap;
+        margin: 3rem 2rem;
+    }
+
+    .info .box {
+        width: 45%;
+        margin: 0;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer div:nth-child(2) {
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    #showSect {
+        height: unset;
+    }
+    /* Villa */
+}
+
+@media (max-width: 768px) {
+    #showSect .frame {
+        margin-bottom: 1rem;
+    }
+
+    #showSect img {
+        width: 300px;
+    }
+
+    .info .box {
+        width: 100%;
+    }
+
+    .btns button:nth-child(4) {
+        margin-top: 4rem;
+    }
+
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 3rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    footer ul {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navClose {
+        display: block;
+        z-index: 100;
+        transition: all 0.3s;
+    }
+
+    .navCloseTrigger {
+        background: url(/menu.svg)no-repeat center;
+    }
+
+    header ul {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(100%);
+        width: 240px;
+        padding-top: 8rem;
+        z-index: 1;
+        transition: transform 0.3s;
+    }
+
+    .ulOpen {
+        transform: translateX(0);
+    }
+
+    header ul::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 240px;
+        height: 100vh;
+        background: #faf9ff;
+        z-index: -1;
+    }
+    /* Villa Plaza */
+    .villa-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info, .sketch {
+        text-align: center;
+    }
+    .text p {
+        text-align: left;
+    }
 }
