@@ -1,6 +1,3 @@
-/* EB Garamond Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +19,7 @@ span {
     color: #C291F2;
     -webkit-text-stroke: .2px #0b0010;
 }
+
 /* Nav */
 .logo {
     cursor: pointer;
@@ -76,6 +74,7 @@ textarea {
     align-items: center;
     gap: 3rem;
 }
+
 #villa {
     max-width: 100%;
     margin: 2rem auto;
@@ -94,6 +93,7 @@ textarea {
     height: 36px;
     cursor: pointer;
 }
+
 /* Villa Plaza content*/
 .villa-container {
     display: flex;
@@ -104,21 +104,25 @@ textarea {
     max-width: 1200px;
     margin: 4rem auto;
 }
+
 .sketch {
     flex: 1;
     min-width: 280px;
 }
+
 .sketch-villa {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-.sketch img{
+
+.sketch img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 .info {
     flex: 1;
     display: flex;
@@ -126,27 +130,32 @@ textarea {
     gap: 2rem;
     min-width: 300px;
 }
+
 .text {
     text-align: center;
 }
-.final-logo img{
+
+.final-logo img {
     max-width: 500px;
     width: 100%;
     height: auto;
     margin-top: 1rem;
 }
+
 /* Stellar Vince:time */
 .video-wrapper {
     max-width: 1000px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
+
 .video-wrapper video {
     width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 .video-wrapper.fullscreen {
     position: fixed;
     top: 0;
@@ -158,11 +167,43 @@ textarea {
     padding: 0;
     margin: 0;
 }
+
 .video-wrapper.video-wrapper.fullscreen video {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
+.image-wrapper {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+}
+
+.time-image {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.time-side,
+.time-side2 {
+    width: 60%;
+    height: auto;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.vidtoimage-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
 /* Showcase:index */
 #showSect {
     height: 100vh;
@@ -452,6 +493,7 @@ footer .container a {
     #contactSect h1 span {
         font-size: 4rem;
     }
+
     /* Villa */
 }
 
@@ -491,6 +533,7 @@ footer .container a {
     #showSect {
         height: unset;
     }
+
     /* Villa */
 }
 
@@ -562,15 +605,28 @@ footer .container a {
         background: #faf9ff;
         z-index: -1;
     }
+
     /* Villa Plaza */
     .villa-container {
         flex-direction: column;
         align-items: center;
     }
-    .info, .sketch {
+
+    .info,
+    .sketch {
         text-align: center;
     }
+
     .text p {
         text-align: left;
+    }
+    /* Time */
+    .image-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+    .time-image, .time-side, .time-side2 {
+        width: 90%;
+        padding: 10px;
     }
 }
