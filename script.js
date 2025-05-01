@@ -1,3 +1,4 @@
+// Based tutorial from https://www.youtube.com/watch?v=FAOEAliMRIE&t=204s Responsive Design Portfolio | HTML CSS & Javascript | Filter Options - NoMoreHowTo Code
 // select elements
 let workBtns = document.querySelectorAll(".workBtn");
 let allProjects = document.querySelectorAll(".project");
