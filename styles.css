@@ -94,6 +94,11 @@ textarea {
     cursor: pointer;
 }
 
+/* Hero Image */
+.right {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 /* Villa Plaza content*/
 .villa-container {
     display: flex;
@@ -620,12 +625,16 @@ footer .container a {
     .text p {
         text-align: left;
     }
+
     /* Time */
     .image-wrapper {
         flex-direction: column;
         width: 100%;
     }
-    .time-image, .time-side, .time-side2 {
+
+    .time-image,
+    .time-side,
+    .time-side2 {
         width: 90%;
         padding: 10px;
     }
