@@ -47,6 +47,10 @@ a {
     color: #070009;
     cursor: pointer;
 }
+p {
+    width: 75%;
+    margin: 0 auto;
+}
 
 button,
 input,
@@ -207,6 +211,7 @@ textarea {
     justify-content: center;
     align-items: center;
     padding: 10px 0;
+    text-align: center;
 }
 
 /* Showcase:index */
