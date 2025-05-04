@@ -149,6 +149,30 @@ textarea {
     height: auto;
     margin-top: 1rem;
 }
+/* Sunset Photos */
+.ptp-row{
+    overflow: auto;
+}
+.ptp-colodds {
+    width: 25%;
+    margin-left: 23%;
+    float: left;
+}
+.ptp-colevens {
+    width: 25%;
+    margin-right: 23%;
+    float: right;
+}
+.sunset-photo {
+    width: calc(100% - 5px);
+    height: auto;
+    margin: 5px 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.sunset-photo:hover {
+    transform: scale(1.02);
+}
 
 /* Stellar Vince:time */
 .video-wrapper {
@@ -641,5 +665,23 @@ footer .container a {
     .time-side2 {
         width: 90%;
         padding: 10px;
+    }
+    /* Sunset Photo */
+    .ptp-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: visible;
+    }
+    .ptp-colevens, .ptp-colodds {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+    .sunset-photo {
+        width: 90%;
+        max-width: 500px;
+        margin: 10px auto;
+        display: block;
     }
 }
