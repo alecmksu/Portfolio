@@ -83,8 +83,8 @@ Responsive Design Portfolio | HTML CSS & Javascript | Filter Options - NoMoreHow
             <div class="project logo"><a href="pages/villalogo.html"><img src="media-files/villa-final.png"
                         loading="lazy" alt="Villa Plaza Logo"></a></div>
             <div class="project logo"><img src="media-files/Neni Logo.jpg" alt="Heimerman Stables Logo"></div>
-            <div class="project art"><a href="pages/sunsetphotos.html"><img src="sunset-photos/photo1.png" loading="lazy"
-                    alt="Sunset Photo with lightning color correction"></a>
+            <div class="project art"><a href="pages/sunsetphotos.html"><img src="sunset-photos/photo1.png"
+                        loading="lazy" alt="Sunset Photo with lightning color correction"></a>
             </div>
             <!-- Videos -->
             <div class="project video"><a href="pages/time.html"><img src="media-files/Time-Thumbnail.png"
@@ -96,15 +96,16 @@ Responsive Design Portfolio | HTML CSS & Javascript | Filter Options - NoMoreHow
     <!-- Contact -->
     <section id="contactSect" class="container">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="https://api.web3forms.com/submit" method="POST" class="flexDisplay">
-            <input type="hidden" name="access_key" value="01d5371a-c168-4c1b-b17e-d1ad425cdef4">
+        <!-- form -->
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="post" class="flexDisplay">
+            <!-- fields -->
             <input type="text" name="name" placeholder="Name" required>
             <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="Phone" placeholder="Phone Number" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
             <!-- Prevent Spam Submission -->
             <input type="checkbox" name="botcheck" class="hidden checkbox" aria-label="close">
-
-            <textarea cols="30" rows="10" placeholder="Message"></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
+            <!-- submit -->
             <div class="btns">
                 <button type="submit"><a>Submit</a></button>
             </div>
@@ -139,11 +140,12 @@ Responsive Design Portfolio | HTML CSS & Javascript | Filter Options - NoMoreHow
                         src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
                 </a>
             </p>
-            <a href="https://www.termsfeed.com/live/170aa287-aebf-4a7d-9e91-157885c10511">Terms of Service</a> - <a
-                href="#">Privacy Policy</a>
+            <a href="https://www.termsfeed.com/live/170aa287-aebf-4a7d-9e91-157885c10511">Terms of Service - Privacy
+                Policy</a>
         </div>
     </footer>
 
+    <script src="contact.js" defer></script>
     <script src="script.js" defer></script>
 </body>
 
