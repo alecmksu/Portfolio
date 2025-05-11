@@ -94,8 +94,8 @@ textarea {
     right: 5%;
     transform: translateY(-50%);
     background: url(menu.svg)no-repeat center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -183,7 +183,7 @@ textarea {
 .sunsetinfo-container {
     outline: 1px #010004 solid;
     outline-style: groove;
-    width: 240px;
+    width: 53%;
     margin: 0 auto;
     padding: 10px 20px;
     text-align: center;
