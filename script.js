@@ -5,6 +5,7 @@ let allProjects = document.querySelectorAll(".project");
 let artProjects = document.querySelectorAll(".art");
 let logoProjects = document.querySelectorAll(".logo");
 let videoProjects = document.querySelectorAll(".video");
+let blogProjects = document.querySelectorAll(".blog");
 
 // toggle workBtnActive
 workBtns.forEach((workBtn) => {
@@ -24,6 +25,11 @@ workBtns.forEach((workBtn) => {
         if (workBtn.classList.contains("video")) {
             allProjects.forEach((allProjects) => { allProjects.style = "display: none" });
             videoProjects.forEach((videoProjects) => { videoProjects.style = "display: block" });
+        }
+        if (workBtn.classList.contains("blog")) {
+            allProjects.forEach((allProjects) => { allProjects.style = "display: none" });
+            blogProjects.forEach((blogProjects) => { blogProjects.style = "display: block"});
+            
         }
         if (workBtn.classList.contains("all")) {
             allProjects.forEach((allProjects) => { allProjects.style = "display: block" });
